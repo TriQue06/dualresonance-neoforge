@@ -11,7 +11,7 @@ public class ShimmerCapsuleModel extends GeoModel<ShimmerCapsuleItem> {
             ResourceLocation.fromNamespaceAndPath(DualResonance.MODID, "geo/shimmer_capsule.geo.json");
 
     private static final ResourceLocation TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(DualResonance.MODID, "textures/item/shimmer_capsule.png");
+            ResourceLocation.fromNamespaceAndPath(DualResonance.MODID, "textures/geckolib/shimmer_capsule.png");
 
     private static final ResourceLocation ANIM =
             ResourceLocation.fromNamespaceAndPath(DualResonance.MODID, "animations/shimmer_capsule.animation.json");

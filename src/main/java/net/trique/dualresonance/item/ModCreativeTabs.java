@@ -38,6 +38,8 @@ public class ModCreativeTabs {
 
                                 output.accept(ModItems.SHIMMER_POWDER);
 
+                                output.accept(ModItems.SHIMMER_CAPSULE);
+
                                 Holder<Potion> normal   = ModPotions.SHIMMER_RAGE;
                                 Holder<Potion> longPot  = ModPotions.SHIMMER_RAGE_LONG;
                                 Holder<Potion> strong   = ModPotions.SHIMMER_RAGE_STRONG;

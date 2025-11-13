@@ -18,13 +18,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> AZURE_CORE_STAFF = ITEMS.register("azure_core_staff",
-            () -> new AzureCoreStaffItem(new Item.Properties()));
+            () -> new AzureCoreStaffItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item> SHIMMER_POWDER = ITEMS.register("shimmer_powder",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SHIMMER_CAPSULE = ITEMS.register("shimmer_capsule",
-            () -> new ShimmerCapsuleItem(new Item.Properties()));
+            () -> new ShimmerCapsuleItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

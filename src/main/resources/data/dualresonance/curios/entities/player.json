@@ -1,4 +1,4 @@
 {
   "entities": ["player"],
-  "slots": ["capsule"]
+  "slots": ["capsule", "belt_bomb"]
 }

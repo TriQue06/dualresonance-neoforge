@@ -1,0 +1,28 @@
+{
+  "dualresonance.creativetab": "Dual Resonance",
+
+  "item.dualresonance.azure_crystal": "Azure Crystal",
+  "item.dualresonance.stable_azure_core": "Stable Azure Core",
+
+  "item.dualresonance.azure_core_staff": "Azure Core Staff",
+
+  "item.dualresonance.shimmer_powder": "Shimmer Powder",
+
+  "item.dualresonance.shimmer_powder": "Shimmer Capsule",
+
+  "effect.dualresonance.shimmer_rage": "Shimmer Rage",
+
+  "item.minecraft.potion.effect.shimmer_rage": "Potion of Shimmer Rage",
+  "item.minecraft.splash_potion.effect.shimmer_rage": "Splash Potion of Shimmer Rage",
+  "item.minecraft.lingering_potion.effect.shimmer_rage": "Lingering Potion of Shimmer Rage",
+
+  "item.minecraft.potion.effect.shimmer_rage_long": "Long Potion of Shimmer Rage",
+  "item.minecraft.splash_potion.effect.shimmer_rage_long": "Long Splash Potion of Shimmer Rage",
+  "item.minecraft.lingering_potion.effect.shimmer_rage_long": "Long Lingering Potion of Shimmer Rage",
+
+  "item.minecraft.potion.effect.shimmer_rage_strong": "Strong Potion of Shimmer Rage",
+  "item.minecraft.splash_potion.effect.shimmer_rage_strong": "Strong Splash Potion of Shimmer Rage",
+  "item.minecraft.lingering_potion.effect.shimmer_rage_strong": "Strong Lingering Potion of Shimmer Rage",
+
+  "curios.identifier.capsule": "Capsule Slot"
+}

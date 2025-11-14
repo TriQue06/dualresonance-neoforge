@@ -15,9 +15,9 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 
-public class ShimmerCapsuleCurioRenderer implements ICurioRenderer {
+public class ShimmerFungusCurioRenderer implements ICurioRenderer {
 
-    private final CapsuleRenderer itemRenderer = new CapsuleRenderer();
+    private final FungusRenderer itemRenderer = new FungusRenderer();
 
     private long lastTrigger = 0;
     private static final int INTERVAL = 20 * 5;
@@ -42,29 +42,30 @@ public class ShimmerCapsuleCurioRenderer implements ICurioRenderer {
         M model = parent.getModel();
 
         if (model instanceof HumanoidModel<?> humanoid) {
-            ModelPart leftArm = humanoid.leftArm;
-            leftArm.translateAndRotate(poseStack);
+
+            ModelPart body = humanoid.body;
+            body.translateAndRotate(poseStack);
+
+            poseStack.translate(0.0f, 0.45f, -0.20f);
+
+            poseStack.mulPose(Axis.ZP.rotationDegrees(180f));
         }
 
-        poseStack.mulPose(Axis.ZP.rotationDegrees(180f));
-
         if (slotContext.entity().isCrouching()) {
-            poseStack.translate(0f, 0.2f, 0f);
+            poseStack.translate(0f, 0.15f, 0.0f);
         }
 
         long time = Minecraft.getInstance().level.getGameTime();
-
         if (time - lastTrigger >= INTERVAL) {
             lastTrigger = time;
 
             long id = GeoItem.getId(stack);
-
             if (id != Long.MAX_VALUE) {
                 ((GeoItem) stack.getItem()).triggerAnim(
                         slotContext.entity(),
                         id,
                         "controller",
-                        "new"
+                        "activate"
                 );
             }
         }

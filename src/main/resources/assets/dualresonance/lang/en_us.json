@@ -9,6 +9,7 @@
   "item.dualresonance.shimmer_powder": "Shimmer Powder",
 
   "item.dualresonance.shimmer_capsule": "Shimmer Capsule",
+  "item.dualresonance.shimmer_fungus": "Shimmer Fungus",
 
   "effect.dualresonance.shimmer_rage": "Shimmer Rage",
 
@@ -24,6 +25,5 @@
   "item.minecraft.splash_potion.effect.shimmer_rage_strong": "Strong Splash Potion of Shimmer Rage",
   "item.minecraft.lingering_potion.effect.shimmer_rage_strong": "Strong Lingering Potion of Shimmer Rage",
 
-  "curios.identifier.capsule": "Capsule Slot",
-  "curios.identifier.belt_bomb": "Belt Bomb Slot"
+  "curios.identifier.capsule": "Capsule Slot"
 }

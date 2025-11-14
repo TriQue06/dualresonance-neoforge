@@ -70,7 +70,7 @@ public class AzureCoreStaffItem extends Item {
             level.playSound(
                     null, user.getX(), user.getY(), user.getZ(),
                     SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.PLAYERS,
-                    1.8F, 1.35F
+                    4.0F, 1.0F
             );
         }
     }
@@ -108,7 +108,7 @@ public class AzureCoreStaffItem extends Item {
     private void fireAzureBeam(Level level, LivingEntity user) {
 
         level.playSound(null, user.getX(), user.getY(), user.getZ(),
-                SoundEvents.AMETHYST_CLUSTER_HIT, SoundSource.PLAYERS, 3.0F, 1.1F);
+                SoundEvents.AMETHYST_CLUSTER_HIT, SoundSource.PLAYERS, 4.0F, 1.0F);
 
         Vec3 source = user.position().add(0, PARTICLE_HEIGHT_OFFSET, 0);
         Vec3 target = user.position().add(user.getLookAngle().scale(RANGE));

@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.AZURE_CORE_STAFF);
         generatedItem(ModItems.SHIMMER_POWDER);
         generatedItem(ModItems.SHIMMER_CAPSULE);
+        generatedItem(ModItems.SHIMMER_FUNGUS);
     }
 
     private ItemModelBuilder generatedItem(DeferredItem<?> item) {

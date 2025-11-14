@@ -11,6 +11,7 @@ import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.trique.dualresonance.client.render.ShimmerCapsuleCurioRenderer;
+import net.trique.dualresonance.client.render.ShimmerFungusCurioRenderer;
 import net.trique.dualresonance.item.ModItems;
 import net.trique.dualresonance.particle.ModParticles;
 import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
@@ -30,9 +31,17 @@ public class DualResonanceClient {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
+
+            // ✔ Shimmer Capsule Render
             CuriosRendererRegistry.register(
                     ModItems.SHIMMER_CAPSULE.get(),
                     ShimmerCapsuleCurioRenderer::new
+            );
+
+            // ✔ Shimmer Fungus Render
+            CuriosRendererRegistry.register(
+                    ModItems.SHIMMER_FUNGUS.get(),
+                    ShimmerFungusCurioRenderer::new
             );
         });
     }

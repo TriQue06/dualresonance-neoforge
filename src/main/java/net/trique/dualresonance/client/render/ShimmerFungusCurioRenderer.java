@@ -65,7 +65,7 @@ public class ShimmerFungusCurioRenderer implements ICurioRenderer {
                         slotContext.entity(),
                         id,
                         "controller",
-                        "activate"
+                        "new"
                 );
             }
         }
